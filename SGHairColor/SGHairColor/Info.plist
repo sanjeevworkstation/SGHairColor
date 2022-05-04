@@ -21,7 +21,5 @@
 			</array>
 		</dict>
 	</dict>
-	<key>NSCameraUsageDescription</key>
-	<string>We need your phone&apos;s camera to capture photos for product reviews, profile pic, virtual mirror etc.</string>
 </dict>
 </plist>

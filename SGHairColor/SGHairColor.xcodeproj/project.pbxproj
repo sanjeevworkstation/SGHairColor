@@ -14,8 +14,8 @@
 		90F316B92821707300319655 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F316B82821707300319655 /* Assets.xcassets */; };
 		90F316BC2821707300319655 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F316BA2821707300319655 /* LaunchScreen.storyboard */; };
 		90F316C42821711E00319655 /* HairCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F316C32821711E00319655 /* HairCameraViewController.swift */; };
-		90F316C62821714200319655 /* HairHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F316C52821714200319655 /* HairHelper.swift */; };
-		90F316C82821715B00319655 /* HairColorFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F316C72821715B00319655 /* HairColorFilter.swift */; };
+		90F316C62821714200319655 /* CameraHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F316C52821714200319655 /* CameraHelper.swift */; };
+		91AAE9BA2822E0A70050CA6F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AAE9B92822E0A70050CA6F /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		90F316BB2821707300319655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90F316BD2821707300319655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90F316C32821711E00319655 /* HairCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairCameraViewController.swift; sourceTree = "<group>"; };
-		90F316C52821714200319655 /* HairHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairHelper.swift; sourceTree = "<group>"; };
-		90F316C72821715B00319655 /* HairColorFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairColorFilter.swift; sourceTree = "<group>"; };
+		90F316C52821714200319655 /* CameraHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHelper.swift; sourceTree = "<group>"; };
+		91AAE9B92822E0A70050CA6F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +64,10 @@
 			children = (
 				90F316AF2821707200319655 /* AppDelegate.swift */,
 				90F316B12821707200319655 /* SceneDelegate.swift */,
+				90F316C52821714200319655 /* CameraHelper.swift */,
 				90F316B32821707200319655 /* ViewController.swift */,
 				90F316C32821711E00319655 /* HairCameraViewController.swift */,
-				90F316C52821714200319655 /* HairHelper.swift */,
-				90F316C72821715B00319655 /* HairColorFilter.swift */,
+				91AAE9B92822E0A70050CA6F /* Extensions.swift */,
 				90F316B52821707200319655 /* Main.storyboard */,
 				90F316B82821707300319655 /* Assets.xcassets */,
 				90F316BA2821707300319655 /* LaunchScreen.storyboard */,
@@ -147,12 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90F316C62821714200319655 /* HairHelper.swift in Sources */,
+				90F316C62821714200319655 /* CameraHelper.swift in Sources */,
 				90F316B42821707200319655 /* ViewController.swift in Sources */,
 				90F316C42821711E00319655 /* HairCameraViewController.swift in Sources */,
 				90F316B02821707200319655 /* AppDelegate.swift in Sources */,
 				90F316B22821707200319655 /* SceneDelegate.swift in Sources */,
-				90F316C82821715B00319655 /* HairColorFilter.swift in Sources */,
+				91AAE9BA2822E0A70050CA6F /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,9 +301,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U8299F6DZM;
+				DEVELOPMENT_TEAM = LN27CB9DQ2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SGHairColor/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need your phone's camera to capture photos for product reviews, profile pic, virtual mirror etc.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -314,7 +315,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = SG.SGHairColor;
+				PRODUCT_BUNDLE_IDENTIFIER = SG.SGHairColorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -329,9 +330,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U8299F6DZM;
+				DEVELOPMENT_TEAM = LN27CB9DQ2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SGHairColor/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need your phone's camera to capture photos for product reviews, profile pic, virtual mirror etc.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -342,7 +344,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = SG.SGHairColor;
+				PRODUCT_BUNDLE_IDENTIFIER = SG.SGHairColorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

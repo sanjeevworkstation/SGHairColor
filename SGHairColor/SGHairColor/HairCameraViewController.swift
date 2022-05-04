@@ -26,7 +26,7 @@ class HairCameraViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        HairHelper.isVerifyAndAuthorisedCamera { [weak self] (result) in
+        CameraHelper.isVerifyAndAuthorisedCamera { [weak self] (result) in
             if result {
                 DispatchQueue.main.async {
                     self?.setUpInitial()
@@ -79,6 +79,10 @@ class HairCameraViewController: UIViewController {
         self.captureSession.startRunning()
         
         // Add Capture Button
+        self.addCaptureButton()
+    }
+    
+    private func addCaptureButton() {
         self.capturePhotoButton = UIButton(type: .custom)
         if let btn = self.capturePhotoButton {
             btn.setTitle("Capture", for: .normal)

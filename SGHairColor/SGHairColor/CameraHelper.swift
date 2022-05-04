@@ -9,7 +9,7 @@ import Foundation
 import AVFoundation
 import UIKit
 
-class HairHelper {
+class CameraHelper {
     class func isVerifyAndAuthorisedCamera(completionHandler: @escaping (Bool) -> ()) {
         switch AVCaptureDevice.authorizationStatus(for: .video) {
             case .authorized: // The user has previously granted access to the camera.
